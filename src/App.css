@@ -38,6 +38,70 @@ h1 {
   font-size: 2rem;
 }
 
+.circular-chart-container {
+  margin: 25px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(236, 72, 153, 0.15));
+  border-radius: 20px;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.3);
+}
+
+.circular-chart-label {
+  font-size: 1rem;
+  color: #a855f7;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
+}
+
+.circular-chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.circular-chart {
+  filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.7));
+}
+
+.progress-circle {
+  transition: stroke-dashoffset 0.5s ease-in-out, stroke 0.3s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.circular-value {
+  fill: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.circular-percentage {
+  fill: #ec4899;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.8);
+}
+
+.circular-chart-info {
+  text-align: center;
+}
+
+.chart-status {
+  color: #a855f7;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: linear-gradient(45deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.25));
+  border-radius: 20px;
+  border: 2px solid rgba(168, 85, 247, 0.5);
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.8);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
+}
+
 .button-group {
   display: flex;
   gap: 15px;
@@ -112,6 +176,19 @@ button:active {
   .counter-section, .greeting-section, .info-section {
     margin: 15px 10px;
     padding: 20px;
+  }
+  
+  .circular-chart {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .circular-value {
+    font-size: 1.4rem;
+  }
+  
+  .circular-percentage {
+    font-size: 0.8rem;
   }
   
   .button-group {
